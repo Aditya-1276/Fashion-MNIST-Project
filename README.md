@@ -26,3 +26,7 @@ Each training and test example is assigned to one of the following labels:
 - Sneaker
 - Bag
 - Ankle boot
+
+# Sample Images with Labels
+
+![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/sample_images_w_labels.png)
