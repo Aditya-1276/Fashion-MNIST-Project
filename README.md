@@ -21,6 +21,8 @@ After clonning the repository run the below command:
 
 This would create a new conda environment ('fashionMNIST') with all the required libraries installed. And then it would run the train_model.py which would train CNN model on 1 epoch and give it's accuracy on test data.
 
+Notebooks directory contains **image_classification.ipynb** which contains all the Machine Learning algorithms we have experimented with and **FashionMNIST_CNN.ipynb** contain the CNN models that we have experimented with.
+
 ## Dataset Structure
 
 The Fashion-MNIST dataset is split into two subsets:
