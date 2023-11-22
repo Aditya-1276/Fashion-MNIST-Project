@@ -33,11 +33,13 @@ Each training and test example is assigned to one of the following labels:
 
 <img width="417" alt="sample_images_w_labels" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/b26ad3d0-af58-4b47-8337-87a9747056cc">
 
+
 ## Data Preprocessing
 
 Starting with the distribution of the data, we observe that data is uniformly distributed with each class having 6000 images in the training dataset.
 
 <img width="647" alt="class_distribution" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/1e604dec-b521-4cb4-86f8-8e8289da873e">
+
 
 In order to streamline the workflow, we will be reducing the dimensionality of data.
 #### $$$$$ need to write stuff here $$$$$
@@ -63,8 +65,31 @@ So, finally, the best accuracy we are getting with our experiment with different
 
 <img width="389" alt="cnn3_architecture" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/a165ddb2-a434-4661-9712-5c415cef14be">
 
+
 And the test accuracy of the model we achieved is 93.1%.
 
 <img width="539" alt="cnn3_accuracy" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/0a20cd26-17dd-4d7c-a141-3206b93742f6">
 
 
+**Loss Evaluation and Accuracy Evaluation Charts**
+
+
+<img width="728" alt="loss_accuracy_evaluation" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/62e715c0-586a-4710-bedb-78976ec3afeb">
+
+
+## Interpretability
+
+
+
+## Conclusion
+
+
+
+## References
+
+- https://www.kaggle.com/code/eliotbarr/fashion-mnist-tutorial
+- https://www.kaggle.com/code/faressayah/fashion-mnist-classification-using-cnns
+- https://www.tensorflow.org/tutorials/images/cnn
+- https://www.pinecone.io/learn/class-activation-maps/
+
+## License
