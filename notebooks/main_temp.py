@@ -53,7 +53,7 @@ METRICS = [
 cnn3.compile(loss ='sparse_categorical_crossentropy', optimizer='adam' ,metrics=['accuracy'])
 
 # Defining hyperparameters
-epochs = 1
+epochs = 25
 batch_size = 512
 
 # training the model
