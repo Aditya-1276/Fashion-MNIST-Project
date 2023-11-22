@@ -1,5 +1,3 @@
-data/processed/*.csv
-data/raw/*.npy
 data/raw/*.csv
 
 .ipynb_checkpoints
