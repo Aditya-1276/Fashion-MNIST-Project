@@ -33,16 +33,11 @@ Each training and test example is assigned to one of the following labels:
 
 <img width="417" alt="sample_images_w_labels" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/b26ad3d0-af58-4b47-8337-87a9747056cc">
 
-![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/sample_images_w_labels.png)
-
 ## Data Preprocessing
 
 Starting with the distribution of the data, we observe that data is uniformly distributed with each class having 6000 images in the training dataset.
 
-![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/class_distribution.png)
-
 <img width="647" alt="class_distribution" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/1e604dec-b521-4cb4-86f8-8e8289da873e">
-
 
 In order to streamline the workflow, we will be reducing the dimensionality of data.
 #### $$$$$ need to write stuff here $$$$$
@@ -66,15 +61,10 @@ After machine learning models, we also experiment with deep learning. For workin
 
 So, finally, the best accuracy we are getting with our experiment with different machine learning models and different architectures of CNN is with this architecture of the model:
 
-![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/cnn3_architecture.png)
-
 <img width="389" alt="cnn3_architecture" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/a165ddb2-a434-4661-9712-5c415cef14be">
 
 And the test accuracy of the model we achieved is 93.1%.
 
-![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/cnn3_accuracy.png)
-
 <img width="539" alt="cnn3_accuracy" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/0a20cd26-17dd-4d7c-a141-3206b93742f6">
 
-## adding this line to check if the site is updated
 
