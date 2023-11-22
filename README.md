@@ -50,6 +50,8 @@ For CNN, we will split the training data into training and validation sets, with
 
 For model selection, we used various machine learning models like SVM, Random Forest, Logistic Regression and XGBoost.
 
+For feature extraction, Principle Component Analysis was done with 2 componentes. Feature extraction was done to extract the most important features from the dataset and droping the less important features. Reducing the number of features help in speeding up the training of the models where we are trainig large dataset. The advantage we get from PCA is that we get good computation speed without losing out much on accuracy.
+
 Experiments were done on these models including hyperparameter-tuning to get accuracies of the models to choose the best performing model with best set of hyperparameters. Following are the accuracies of various machine learning models that we have used:
 
 | **Model**          | **Accuracy**|
