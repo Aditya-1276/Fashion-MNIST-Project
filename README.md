@@ -81,7 +81,12 @@ And the test accuracy of the model we achieved is 93.1%.
 
 ## Interpretability
 
+Convolutional neural networks assign importance to various aspects in an image using weights and biases and use these aspects in order to differentiate between images. This is clearly visible when we visualize the class activation maps. We can see from the class activation maps of the best performing architecture given below.
 
+![Class Activation Maps for CNN Architecture](https://github.com/archit28-tamu/fashion_mnist_project/assets/143130477/b8b98b25-d708-4b5a-a29d-75724a58c077)
+
+
+We can see in the first activation map, the first convolutional layer activates the pixels of the entire sneaker while activating the heel and the topline of the sneaker. This indicates to us that the model will be considering the general shape and size of the sneaker, while prioritizing the existence/shape of the heel and topline of the sneaker. From the second activation map we see that the second convolutional layer has prioritized only the laces and the tongue of the sneaker along with parts of the sole, barely activating anything else; indicating to us that the model will be paying attention to the laces and tongue of the sneaker in the second layer. As we reach the third layer, the class activation map starts to become more abstract. Whereas the previous two maps resembled the original image quite well, the third image is starting to deviate from the original quite heavily. However, it is not degraded enough to become a detriment, as we can make out that the third layer has earmarked the tongue and the topline of the sneaker.
 
 ## Conclusion
 
