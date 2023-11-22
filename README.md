@@ -12,6 +12,8 @@ The Fashion-MNIST dataset is split into two subsets:
 - Training Set: This subset contains 60,000 images used for training machine learning models.
 - Testing Set: This subset consists of 10,000 images used for testing and benchmarking the trained models.
 
+[Click here to download the dataset.](https://www.kaggle.com/datasets/zalando-research/fashionmnist)
+
 ## Labels
 
 Each training and test example is assigned to one of the following labels:
@@ -30,3 +32,27 @@ Each training and test example is assigned to one of the following labels:
 # Sample Images with Labels
 
 ![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/sample_images_w_labels.png)
+
+## Data Preprocessing
+
+Starting with the distribution of the data, we observe that data is uniformly distributed with each class having 6000 images in the training dataset.
+
+#### $$$$$ input image here $$$$$
+
+In order to streamline the workflow, we will be reducing the dimensionality of data.
+#### $$$$$ need to write stuff here $$$$$
+
+For CNN, we will split the training data into training and validation sets, with the validation set having 10,000 rows. We will also range normalize the pixel data. This is done by dividing the pixel data by 255, as all of the pixel values lie between 0 and 255. The data is also reshaped into its intended 28x28 format so that the model reads the data as images, rather than a set of values.
+
+## Model Selection
+
+For model selection, we used various machine learning models like SVM, Random Forest, Logistic Regression and XGBoost.
+
+Experiments were done on these models including hyperparameter-tuning to get accuracies of the models to choose the best performing model with best set of hyperparameters. Following are the accuracies of various machine learning models that we have used:
+
+| **Model**          | **Accuracy**|
+|:-------------------|------------:|
+| SVM                | **bold**    |
+| Random Forest      |  `code`     |
+| Logistic Regression| _italic_    |
+| XGBoost            | _italic_    |
