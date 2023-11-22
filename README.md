@@ -76,5 +76,5 @@ And the test accuracy of the model we achieved is 93.1%.
 
 <img width="539" alt="cnn3_accuracy" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/0a20cd26-17dd-4d7c-a141-3206b93742f6">
 
-
+## adding this line to check if the site is updated
 
