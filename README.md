@@ -37,14 +37,14 @@ Each training and test example is assigned to one of the following labels:
 
 Starting with the distribution of the data, we observe that data is uniformly distributed with each class having 6000 images in the training dataset.
 
-#### $$$$$ input image here $$$$$
+![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/class_distribution.png)
 
 In order to streamline the workflow, we will be reducing the dimensionality of data.
 #### $$$$$ need to write stuff here $$$$$
 
 For CNN, we will split the training data into training and validation sets, with the validation set having 10,000 rows. We will also range normalize the pixel data. This is done by dividing the pixel data by 255, as all of the pixel values lie between 0 and 255. The data is also reshaped into its intended 28x28 format so that the model reads the data as images, rather than a set of values.
 
-## Model Selection
+## Model Selection and Evaluation
 
 For model selection, we used various machine learning models like SVM, Random Forest, Logistic Regression and XGBoost.
 
@@ -56,3 +56,15 @@ Experiments were done on these models including hyperparameter-tuning to get acc
 | Random Forest      |  `code`     |
 | Logistic Regression| _italic_    |
 | XGBoost            | _italic_    |
+
+After machine learning models, we also experiment with deep learning. For working with images, Convulational Neural Network produce very good results, so we try building architecture for CNN models. We built 3 different architectures of CNN with different combination of Convulation Layers, Batch Normalization, Max Pooling and Dropout. We optimized every architecture based on the Class Activation Map that we generated from convulation layers. Also, we tunned hyperparameter by changing the number of epochs and finally trainind our last model with 25 epochs.
+
+So, finally, the best accuracy we are getting with our experiment with different machine learning models and different architectures of CNN is with this architecture of the model:
+
+![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/cnn3_architecture.png)
+
+And the test accuracy of the model we achieved is 93.1%.
+
+![](https://github.com/archit28-tamu/fashion_mnist_project/blob/main/images/cnn3_accuracy.png)
+
+
