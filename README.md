@@ -41,8 +41,9 @@ Starting with the distribution of the data, we observe that data is uniformly di
 <img width="647" alt="class_distribution" src="https://github.com/archit28-tamu/fashion_mnist_project/assets/143445547/1e604dec-b521-4cb4-86f8-8e8289da873e">
 
 
-In order to streamline the workflow, we will be reducing the dimensionality of data.
-#### $$$$$ need to write stuff here $$$$$
+In order to streamline the workflow, we will be reducing the dimensionality of data. For this we will be using principal component analysis. After plotting a graph between explained variance and the number of components, we can see that we retain about 95% variance at 150 components.
+
+As such, we will keep 150 principal components. The more principal components we use, the higher the separability of the data ought to be, and this is showcased in the graphs below; where we can clearly see that the separability between the different classes markedly increases as we increase the components from 2 to 3.
 
 For CNN, we will split the training data into training and validation sets, with the validation set having 10,000 rows. We will also range normalize the pixel data. This is done by dividing the pixel data by 255, as all of the pixel values lie between 0 and 255. The data is also reshaped into its intended 28x28 format so that the model reads the data as images, rather than a set of values.
 
@@ -56,10 +57,10 @@ Experiments were done on these models including hyperparameter-tuning to get acc
 
 | **Model**          | **Accuracy**|
 |:-------------------|------------:|
-| SVM                | **bold**    |
-| Random Forest      |  `code`     |
-| Logistic Regression| _italic_    |
-| XGBoost            | _italic_    |
+| SVM                | 90.32%      |
+| Random Forest      | 86.98%      |
+| Logistic Regression| 85.16%      |
+| XGBoost            | 89.05%      |
 
 After machine learning models, we also experiment with deep learning. For working with images, Convulational Neural Network produce very good results, so we try building architecture for CNN models. We built 3 different architectures of CNN with different combination of Convulation Layers, Batch Normalization, Max Pooling and Dropout. We optimized every architecture based on the Class Activation Map that we generated from convulation layers. Also, we tunned hyperparameter by changing the number of epochs and finally trainind our last model with 25 epochs.
 
@@ -88,9 +89,13 @@ Convolutional neural networks assign importance to various aspects in an image u
 
 We can see in the first activation map, the first convolutional layer activates the pixels of the entire sneaker while activating the heel and the topline of the sneaker. This indicates to us that the model will be considering the general shape and size of the sneaker, while prioritizing the existence/shape of the heel and topline of the sneaker. From the second activation map we see that the second convolutional layer has prioritized only the laces and the tongue of the sneaker along with parts of the sole, barely activating anything else; indicating to us that the model will be paying attention to the laces and tongue of the sneaker in the second layer. As we reach the third layer, the class activation map starts to become more abstract. Whereas the previous two maps resembled the original image quite well, the third image is starting to deviate from the original quite heavily. However, it is not degraded enough to become a detriment, as we can make out that the third layer has earmarked the tongue and the topline of the sneaker.
 
+## Results
+
+Multiple machine learning algorithms such as logistic regression, support vector machines, random forests classifier, extreme gradient boost and convolutional neural networks in order to find out which of these models perform the best on the Fashion-MNIST dataset. The convolutional neural network performed the best with a 93.1% accuracy.
+
 ## Conclusion
 
-
+In this project, we have conducted a series of tests in an effort to find the best model to classify the Fashion-MNIST dataset, and as an extension identify a model that will be proficient at identifying and classifying clothing images. We conducted a preliminary data exploration in order to get an idea of what we will be working with. The data is then transformed using principal component analysis and normalization in order to improve the efficiency of the model.  The data is then divided into three sections: train, test and validate sets so as to train and validate the model without cross-contaminating the test set. Using this newly processed data, we train several machine learning models; namely, logistic regression, random forests classifier, support vector machine, extreme gradient boost and convolutional neural network. Our results demonstrate that convolutional neural networks outperform other machine learning algorithms for image classification tasks, achieving an accuracy of 93%. This remarkable accuracy highlights the effectiveness of convolutional neural networks in image classification tasks and paves the way for further advancements in this domain.
 
 ## References
 
@@ -98,6 +103,12 @@ We can see in the first activation map, the first convolutional layer activates 
 - https://www.kaggle.com/code/faressayah/fashion-mnist-classification-using-cnns
 - https://www.tensorflow.org/tutorials/images/cnn
 - https://www.pinecone.io/learn/class-activation-maps/
+- https://www.kaggle.com/datasets/zalando-research/fashionmnist
+- https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+- https://xgboost.readthedocs.io/en/stable/
+
 
 ## License
 
